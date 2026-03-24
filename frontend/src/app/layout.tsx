@@ -32,6 +32,10 @@ export default function RootLayout({
         variables: { 
           colorPrimary: '#4f46e5',
           colorBackground: '#09090b',
+          colorText: 'white',
+          colorTextSecondary: '#a1a1aa',
+          colorInputText: 'white',
+          colorInputBackground: '#18181b',
         },
         elements: {
           card: 'border border-zinc-800 shadow-2xl',
