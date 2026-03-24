@@ -17,3 +17,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Clerk Typography Forced Overrides for Dark Mode */
+.cl-rootBox *, .cl-card * {
+  color: #ffffff !important;
+}
+
+/* Specific background fixes inside Clerk */
+.cl-formButtonPrimary {
+  background-color: #4f46e5 !important;
+}
+.cl-formButtonPrimary:hover {
+  background-color: #4338ca !important;
+}
+.cl-internal-180wb59 {
+  display: none !important; /* hide default clerk footer badge if necessary, but we just want it white */
+}
+.cl-socialButtonsBlockButton {
+  border-color: #27272a !important;
+}
