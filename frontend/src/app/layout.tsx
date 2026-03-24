@@ -32,13 +32,25 @@ export default function RootLayout({
         variables: { 
           colorPrimary: '#4f46e5',
           colorBackground: '#09090b',
-          colorText: 'white',
+          colorText: '#ffffff',
           colorTextSecondary: '#a1a1aa',
-          colorInputText: 'white',
+          colorInputText: '#ffffff',
           colorInputBackground: '#18181b',
         },
         elements: {
-          card: 'border border-zinc-800 shadow-2xl',
+          card: 'border border-zinc-800 shadow-2xl bg-[#09090b]',
+          headerTitle: 'text-white',
+          headerSubtitle: 'text-zinc-400',
+          socialButtonsBlockButton: 'text-white border-zinc-800 hover:bg-zinc-900',
+          socialButtonsBlockButtonText: 'text-white font-medium',
+          dividerLine: 'bg-zinc-800',
+          dividerText: 'text-zinc-500',
+          formFieldLabel: 'text-white',
+          formFieldInput: 'bg-zinc-900 border-zinc-800 text-white',
+          footerActionText: 'text-zinc-400',
+          footerActionLink: 'text-indigo-400 hover:text-indigo-300',
+          identityPreviewText: 'text-white bg-zinc-900 border border-zinc-800',
+          formButtonPrimary: 'bg-indigo-600 hover:bg-indigo-500 text-white',
         }
       }}
     >
