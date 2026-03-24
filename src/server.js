@@ -1,17 +1,19 @@
-const express = require("express")
-const mongoose = require("mongoose")
-const orderRoutes = require("./routes/orderRoutes")
+const express = require("express");
+const cors = require("cors");
+const collectionRoutes = require("./routes/collectionRoutes");
+const testimonialRoutes = require("./routes/testimonialRoutes");
+require("dotenv").config();
 
-const app = express()
+const app = express();
 
-app.use(express.json())
+app.use(cors());
+app.use(express.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/ordersDB")
-.then(()=> console.log("MongoDB conectado"))
-.catch(err => console.log(err))
+app.use("/api/collections", collectionRoutes);
+app.use("/api/testimonials", testimonialRoutes);
 
-app.use("/order", orderRoutes)
+const port = process.env.PORT || 3001; // Change to 3001 to leave 3000 free for Next.js
 
-app.listen(3000, () => {
-    console.log("Servidor rodando na porta 3000")
-})
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
