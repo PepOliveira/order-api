@@ -14,7 +14,7 @@ export default function Home() {
         {/* Floating Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-sm font-semibold text-indigo-400 mb-2 shadow-xl shadow-black/50">
           <Sparkles size={16} /> 
-          <span>The next generation of trust</span>
+          <span>No more fake text reviews. Real voices only.</span>
         </div>
 
         {/* Hero Logo */}
@@ -25,14 +25,14 @@ export default function Home() {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-tight">
-          Supercharge your trust with <br className="hidden md:block" />
+          Turn Happy Customers Into <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 animate-gradient-x">
-            Audio Testimonials
+            Your Best Salesmen.
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-          The easiest way to collect, manage, and display authentic voice feedback from your clients. Build deeper connections through the power of voice.
+          Text reviews are dead. Collect authentic, AI-transcribed voice testimonials in seconds, and embed them anywhere with one line of code.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-5 pt-8">
@@ -41,7 +41,7 @@ export default function Home() {
             className="group relative flex items-center justify-center w-full sm:w-auto px-8 py-4 text-lg font-bold text-white bg-indigo-600 hover:bg-indigo-500 rounded-2xl shadow-[0_0_40px_-10px_rgba(79,70,229,0.5)] transition-all hover:scale-105 overflow-hidden"
           >
             <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[200%] group-hover:animate-[shimmer_1.5s_infinite]" />
-            Go to Dashboard
+            Start Collecting Free
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={22} />
           </Link>
           
@@ -49,7 +49,7 @@ export default function Home() {
             href="/sign-in"
             className="flex items-center justify-center w-full sm:w-auto px-8 py-4 text-lg font-bold text-zinc-300 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 hover:text-white rounded-2xl transition-all shadow-xl"
           >
-            Sign In
+            Login to Dashboard
           </Link>
         </div>
 
@@ -62,7 +62,7 @@ export default function Home() {
              <Star fill="currentColor" size={20} />
              <Star fill="currentColor" size={20} />
            </div>
-           <p className="text-sm font-medium">Loved by forward-thinking companies</p>
+           <p className="text-sm font-medium">Trusted by 500+ conversion-obsessed creators</p>
         </div>
 
       </div>
